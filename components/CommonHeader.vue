@@ -28,9 +28,9 @@ export default {
     async logout() {
       try {
         await this.$auth.logout();
-        this.$router.push("/login");
+        this.$router.push("/logout");
       } catch (error) {
-        console.log(error);
+        alert('ログアウトしました')
       }
     },
     goCartPage() {

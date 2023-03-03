@@ -2,7 +2,7 @@ export default function ({
     route,
     redirect
 }) {
-    if (!$auth.loggedIn && route.name !== 'login' && route.name !== 'register') {
+    if (!$auth.loggedIn && route.name !== 'login') {
         redirect('/login')
     }
 }

@@ -57,9 +57,9 @@ export default {
 
 .item-img {
   width: 100px;
-  height: 120px;
+  height: 100px;
   object-fit: cover;
-  object-position: 0 0;
+  object-position: 20% 0;
   margin: 5px;
 }
 

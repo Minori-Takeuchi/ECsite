@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h2>ショッピングカート</h2>
-    <div class="cart-item">
+    <h2></h2>
+    <div class="cart-item" v-for="(item,index) in items" :key="index">
       <Item />
     </div>
   </div>
@@ -11,9 +11,14 @@
 export default {
   data() {
     return {
-
+      items:[]
     }
   },
+  methods: {
+    async getItems() {
+      await this.$axios.get('/api/item')
+    }
+  }
 }
 </script>
 
